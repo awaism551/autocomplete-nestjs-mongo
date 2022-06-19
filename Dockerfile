@@ -1,7 +1,7 @@
-FROM node:16
+FROM node:12.22.8
 
 # Create app directory
-WORKDIR /f/projects/nestjs/autocomplete-mongo/autocomplete-mongo
+WORKDIR /home/dev/projects/autocomplete-nest-mongo
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

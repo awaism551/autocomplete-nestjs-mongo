@@ -6,8 +6,8 @@ import { City, CitySchema } from './city.schema';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/admin'),
-    MongooseModule.forFeature([{ name: City.name, schema: CitySchema }])
+    MongooseModule.forRoot('mongodb://root:root@192.168.75.189:27017/admin'),
+    MongooseModule.forFeature([{ name: City.name, schema: CitySchema }]),
   ],
   controllers: [AppController],
   providers: [AppService],
